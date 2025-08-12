@@ -105,6 +105,7 @@ const Multipleques = () => {
                                 id={`option${id + 1}`}
                                 checked={selectedOption.includes(option)}
                                 onChange={handleOptionChange}
+                                className='cursor-pointer'
                             />
                             {option}
                         </button>

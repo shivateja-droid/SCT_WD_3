@@ -96,14 +96,15 @@ const Quizscreen = () => {
                                 id={`option${idx + 1}`}
                                 checked={selectedOption === option}
                                 onChange={handleOptionChange}
+                                className='cursor-pointer'
                             />
                             {option}
                         </button>
                     ))}
                 </div>
                 <div className='w-full md:w-1/2 mx-auto flex justify-around mt-5'>
-                  <button onClick={handleSubmitQuiz} className='submit-quiz-button bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600'>Submit quiz</button>
-                    <button onClick={handleNextQuestion} className='next-btn bg-green-500 text-white p-2 rounded-lg hover:bg-green-600'>Next Question</button>
+                  <button onClick={handleSubmitQuiz} className='submit-quiz-button bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 cursor-pointer'>Submit quiz</button>
+                    <button onClick={handleNextQuestion} className='next-btn bg-green-500 text-white p-2 rounded-lg hover:bg-green-600 cursor-pointer'>Next Question</button>
                 </div>
             </div>
         </div>

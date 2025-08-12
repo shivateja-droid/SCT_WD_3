@@ -11,9 +11,9 @@ const Navbar = () => {
                 <span className='md:text-lg font-bold text-sm '>Quiz Game</span>
             </div>
             <div className='flex gap-1 md:gap-5'>
-                <div className='hover:text-blue-300 text-sm ' onClick={(e)=>navigate('/')}><a href="#home">Home</a></div>
-                <div className='hover:text-blue-300 text-sm ' onClick={(e)=>navigate('/categories')}><a href="#categories">Categories</a></div>
-                <div className='hover:text-blue-300 text-sm '><a href="#leaderboard">Leaderboard</a></div>
+                <div className='hover:text-blue-300 text-sm cursor-pointer ' onClick={(e)=>navigate('/')}>Home</div>
+                <div className='hover:text-blue-300 text-sm cursor-pointer ' onClick={(e)=>navigate('/categories')}>Categories</div>
+                <div className='hover:text-blue-300 text-sm cursor-pointer '>Leaderboard</div>
             </div>
         </div>
     )
