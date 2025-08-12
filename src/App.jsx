@@ -9,9 +9,8 @@ import  Categories  from './components/categories'
 import { HashRouter as Router,Routes,Route } from 'react-router-dom'
 
 function App() {
-  const repoName = "SCT_WD_3";
   return (
-    <Router basename={process.env.NODE_ENV === 'production' ? `/${repoName}` : ''}>
+    <Router>
       <Routes>
         <Route path="/" element={<Homescreen />} />
         <Route path="/instructions" element={<Instructions />} />
