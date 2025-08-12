@@ -6,12 +6,12 @@ import Multipleques from './components/Multipleques'
 import Scorescreen from './components/Scorescreen'
 import Instructions from './components/Instructions'
 import  Categories  from './components/categories'
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import { HashRouter as Router,Routes,Route } from 'react-router-dom'
 
 function App() {
-
+  const repoName = "SCT_WD_3";
   return (
-    <Router>
+    <Router basename={process.env.NODE_ENV === 'production' ? `/${repoName}` : ''}>
       <Routes>
         <Route path="/" element={<Homescreen />} />
         <Route path="/instructions" element={<Instructions />} />
